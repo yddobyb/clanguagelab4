@@ -13,7 +13,7 @@ int main(void) {
 size_t in_between(const int data[],  size_t length,  int val_1, int val_2) {
     int count = 0;
     for (size_t i = 0; i < length; i++) {
-        if (data[i] > val_1 && data[i] < val_2) {
+        if (data[i] >= val_1 && data[i] <= val_2) {
             count++;
 
         }
