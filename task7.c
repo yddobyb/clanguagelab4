@@ -7,7 +7,7 @@ int max_abs(const int data[], size_t length){
 
   for (int i = 0; i<length; i++){
     if (fabs(data[i]) > fabs(max)){
-      max = data[i];
+      max = fabs(data[i]);
   }
   }
 
@@ -15,7 +15,7 @@ int max_abs(const int data[], size_t length){
 }
 
 int main(){
-  int data[10] = {1, 7, 8, -9, 10};
+  int data[10] = {1, 7, 8, -9, -10};
   printf("%d\n", max_abs(data, 10));
 
   return 0;
